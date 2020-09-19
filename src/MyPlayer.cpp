@@ -13,13 +13,14 @@ public:
     MyPlayer() : PlayerScript("MyPlayer") { }
 
     void OnLogin(Player* player) override {
-        if (sConfigMgr->GetBoolDefault("MyCustom.enableHelloWorld", false)) {
-            ChatHandler(player->GetSession()).SendSysMessage("Hello World from Skeleton-Module!");
+        if (sConfigMgr->GetBoolDefault("Telegram.enableGreeting", false)) {
+            ChatHandler(player->GetSession()).SendSysMessage("Hello from mod-Telegram!");
         }
     }
 };
 
-void AddMyPlayerScripts() {
+
+void AddMyTelegramScripts() {
     new MyPlayer();
 }
 

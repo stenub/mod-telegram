@@ -1,0 +1,16 @@
+[worldserver]
+
+#
+# Enable Greeting message on player join 
+# default: false
+#
+
+Telegram.enableGreeting=false
+
+
+
+Telegram.username
+
+Telegram.api-token
+
+Telegram.irgendwas
